@@ -23,11 +23,8 @@ The `rancher-monitoring-dashboards` chart installs a dashboard-only version of `
 | **Prometheus**                        | Bundled in chart                                | External / BYO                                                                    |
 | **Alertmanager**                      | Bundled in chart                                | External / BYO                                                                    |
 | **Node/kube-state-metrics exporters** | Bundled in chart                                | External / BYO                                                                    |
-| **Use case**                          | Greenfield clusters with no existing monitoring | Clusters already running a monitoring stack that want Rancher-specific dashboards |
 
-## Usage
-
-Install `rancher-monitoring` when you need Rancher to manage the full monitoring stack. Install `rancher-monitoring-dashboards` when you already have the Prometheus stack running and just want Rancher's dashboards.
+The main goal is to better cater to the requirements of the users by providing a greater degree of control over the images that are utilized in the Prometheus Stack. This will make it simpler to deal with CVEs without depending on updates from `rancher-monitoring-dashboards` chart.
 
 ## Dependencies
 
