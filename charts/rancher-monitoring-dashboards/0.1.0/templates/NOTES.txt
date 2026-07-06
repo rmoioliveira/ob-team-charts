@@ -1,6 +1,3 @@
-Thank you for installing {{ .Chart.Name }}.
+{{ $.Chart.Name }} has been installed. Check its status by running:
+  kubectl --namespace {{ template "rancher-monitoring.namespace" . }} get pods -l "release={{ $.Release.Name }}"
 
-Your release is named {{ .Release.Name }}.
-
-════════════════════════════════════════════════════════════════════════════════
-TODO
